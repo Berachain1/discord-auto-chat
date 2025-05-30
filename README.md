@@ -6,103 +6,143 @@ A Discord bot script for auto level up using multiple tokens. It automatically s
 
 ## ✨ Features
 
-- ✅ Supports multiple tokens
-- 🔁 Auto-delete messages after sending (optional)
-- ⏳ Detects timeout & slowmode
-- 🛡️ Handles rate limits & errors
-- 💬 Includes 75+ random chat phrases
-- 🖥️ Works on both PC and Termux
+* ✅ Supports multiple tokens
+* 🔁 Auto-delete messages after sending (optional)
+* ⏳ Detects timeout & slowmode
+* 🛡️ Handles rate limits & errors
+* 💬 Includes 75+ random chat phrases
+* 🖥️ Works on both PC and Termux
 
 ---
 
 ## 📋 Requirements
 
-- Python 3.7+
-- `discord.py` 1.7.3
-- `asyncio`
-- `colorama`
-- `pyfiglet` (for banner display)
+* Python 3.7+
+* `discord.py` 1.7.3
+* `asyncio`
+* `colorama`
+* `pyfiglet` (for banner display)
 
-All dependencies are included in the `requirements.txt`.
+All dependencies are included in the `requirements.txt`. However, make sure `pyfiglet` is installed successfully before running the script.
 
 ---
 
 ## 💻 Installation - Windows / PC
 
-### 📥 Step 1: Clone the repository
+### 📅 Step 1: Clone the repository
+
 ```bash
 git clone https://github.com/Berachain1/discord-auto-chat.git
 cd discord-auto-chat
 ```
 
 ### 🛠️ Step 2: Setup Python & install dependencies
+
 ```bash
-python -m venv venv
+python3 -m venv venv
+```
+
+```bash
 venv\Scripts\activate
+```
+
+```bash
 pip install -r requirements.txt
 ```
 
+If you encounter an error about `pyfiglet`, install it manually:
+
+```bash
+pip install pyfiglet
+```
+
 ### 🚀 Step 3: Run the script
+
 ```bash
 python annisa.py
 ```
 
 ---
 
-## 📱 Installation - Termux (Android)
+## 📱 Installation - Termux (Android) / Linux / Ubuntu
 
-### 📥 Step 1: Clone the repository
+### 📅 Step 1: Clone the repository
+
 ```bash
 pkg update && pkg upgrade
+```
+
+```bash
 pkg install git python
-https://github.com/Berachain1/discord-auto-chat.git
+```
+
+```bash
+git clone https://github.com/Berachain1/discord-auto-chat.git
 cd discord-auto-chat
 ```
 
-### 🛠️ Step 2: Install dependencies
+### 🛠️ Step 2: Setup Python & install dependencies
+
+```bash
+python3 -m venv venv
+```
+
+```bash
+source venv/bin/activate
+```
+
 ```bash
 pip install -r requirements.txt
 ```
 
+If you encounter an error about `pyfiglet`, install it manually:
+
+```bash
+pip install pyfiglet
+```
+
 ### 🚀 Step 3: Run the script
+
 ```bash
 python annisa.py
 ```
 
 ---
 
-## 📌 Usage Instructions
+## 📋 Usage Instructions
 
 1. **Add your Discord tokens** to a file named `token.txt` (1 token per line):
+
 ```
-TOKEN1
+TOKEN1  
 TOKEN2
 ```
 
 2. **Run the script** and follow the prompts:
-- Input channel ID
-- Number of messages to send
-- Delay between messages (recommended: 10 seconds)
+
+   * Enter channel ID
+   * Number of messages to send
+   * Delay between messages (recommended: 10 seconds)
 
 ---
 
 ## 🔑 How to Get Your Discord Token
 
-> ⚠️ Use at your own risk — self-bots are against Discord's TOS.
+⚠️ Use at your own risk — self-bots are against Discord's TOS.
 
-1. Open Discord in your browser
+1. Open Discord in a browser
 2. Press `F12` to open Developer Tools
 3. Go to the **Network** tab
-4. Find a request with `authorization` in headers
-5. Copy your token from the request headers
+4. Look for a request with `authorization` in the headers
+5. Copy your token from there
 
 ---
 
 ## 📺 How to Get Channel ID
 
-1. Go to Discord settings
+1. Open your Discord settings
 2. Enable **Developer Mode**
-3. Right-click the channel you want
+3. Right-click on the desired channel
 4. Click **"Copy ID"**
 
 ---
@@ -111,40 +151,36 @@ TOKEN2
 
 > Using self-bots violates Discord's Terms of Service. Use this script at your own risk.
 
-- I take no responsibility for any account bans or misuse.
-- By using this script, **you agree** to take full responsibility.
-- Use it wisely and ethically.
+* I take no responsibility for any account bans or misuse.
+* By using this script, **you agree** to take full responsibility.
+* Use it wisely and ethically.
 
 ---
 
 ## 🧠 Troubleshooting
 
-- ❌ **Invalid Token**: Replace with a working one in `token.txt`
-- ⚠️ **Rate Limited**: Script will automatically wait
-- ⏱️ **Timeout or Slowmode**: Will detect and handle it
-- 🔒 **Permission Issues**: Make sure tokens have permission to send/delete messages
-- 🔇 **Voice Channel?**: Script will warn you
+* ❌ **Invalid Token**: Replace the token with an active one in `token.txt`
+* ⚠️ **Rate Limited**: The script will automatically wait
+* ⏱️ **Timeout or Slowmode**: Will be detected and handled
+* 🔐 **Permission Issues**: Make sure the token has permission to send/delete messages
+* 🔇 **Voice Channel?**: The script will notify you
 
 ---
 
 ## 💡 Tips for Safe Use
 
-- Always use a **10-second delay** or more to avoid detection
-- Use **alt accounts**, never your main
-- Avoid overusing on one server
+* Always use a delay of **10 seconds or more** between messages
+* Use an **alt account**, not your main account
+* Do not spam too much in one server
 
 ---
 
 ## 🙏 Support Me
 
-If you appreciate my work and want to support future scripts:
+If you like this script and want to support its development:
 
-**💸 Tip me (EVM Adress):**  
+**💸 Tip me (EVM Address):**
 `0x47e33cec17c1faec718481ef5937d24f9318c031`
 
-Any amount helps and keeps me motivated 💖
+Thank you so much for your support! ❤️
 
----
-
-
-# discord-auto-chat

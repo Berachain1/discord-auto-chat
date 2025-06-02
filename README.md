@@ -1,4 +1,4 @@
-# Discord Auto level up
+# Discord Auto level up Join My chanel Telegram : https://t.me/AIRDROPRSIND123
 
 A Discord bot script for auto level up using multiple tokens. It automatically sends random messages to a channel to simulate activity.
 
@@ -12,6 +12,12 @@ A Discord bot script for auto level up using multiple tokens. It automatically s
 * 🛡️ Handles rate limits & errors
 * 💬 Includes 75+ random chat phrases
 * 🖥️ Works on both PC and Termux
+- ✅ Supports multiple tokens
+- 🔁 Auto-delete messages after sending (optional)
+- ⏳ Detects timeout & slowmode
+- 🛡️ Handles rate limits & errors
+- 💬 Includes 250+ random chat phrases
+- 🖥️ Works on both PC and Termux
 
 ---
 
